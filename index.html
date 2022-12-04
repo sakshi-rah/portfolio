@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/cf8e2afea6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -40,10 +41,60 @@
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p>I'm Sakshi Rahangdale , pursuing my Final Year B.E., from TGPCET. And done my Full Stack Development from Road to Code Organization.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onClick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onClick="opentab('experience')">Experience</p>
+                        <p class="tab-links " onClick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Designer</span><br>Designing Web Interfaces</li>
+                            <li><span>Web Developer</span><br>Web Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Internship at RTC</li>
+                            <li><span>2022 - 2023</span><br>Internship at RTC</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Pursuing B.E. Final Year from TGPCET Nagpur.</li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
+
+    <!--Services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Delectus saepe fugit corporis sed, nihil voluptates blanditiis,
+                        cupiditate nostrum amet quia ullam, 
+                        et ipsam magni vero qui! Vero sit quod illo.</p>
+                    <a href="">learn more</a>
+                </div>
+                <div>
+                    <h2>Web Develop</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Delectus saepe fugit corporis sed, nihil voluptates blanditiis,
+                        cupiditate nostrum amet quia ullam, 
+                        et ipsam magni vero qui! Vero sit quod illo.</p>
+                    <a href="">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script/script.js"></script>
 </body>
 
 </html>
