@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/script.js"></script>
     <script src="https://kit.fontawesome.com/cf8e2afea6.js" crossorigin="anonymous"></script>
 
 </head>
@@ -15,21 +16,29 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="./images/profile-pic.jpg" alt="" class="logo">
                 <h1>Sakshi</h1>
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
-                    <i class="fa-solid fa-xmark"></i>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
-            <div class="header-text">
-                <p>Full Stack Developer</p>
-                <h1>Hi, I'm <span>Sakshi Rahangdale</span><br> From India</h1>
+
+            <div class="container-item">
+
+                <div class="header-text">
+                    <p>Full Stack Developer</p>
+                    <h1>Hi, I'm <span>Sakshi Rahangdale</span><br> From India</h1>
+                </div>
+
+                <div>
+                    <img src="./images/profile-pic.jpg" alt="profile-pic" class="profile-pic" />
+                </div>
+
             </div>
         </div>
     </div>
@@ -52,14 +61,25 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Web Designer</span><br>Designing Web Interfaces</li>
-                            <li><span>Web Developer</span><br>Web Development</li>
+                            <li><span>Web Designer</span><br>Frontend developer : </li>
+                            <li>1. HTML5</li>
+                            <li>2. CSS3</li>
+                            <li>3. JS</li>
+                            <li>4. React.JS</li>
+
+                            <li><span>Web Developer</span><br>Backend developer : </li>
+                            <li>1. Node.JS</li>
+                            <li>2. Express.Js</li>
+                            <li>3. MongoDB</li>
+                            <li>4. Bootstrap</li>
+                            <li>5. Git & Github</li>
+
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2022 - Current</span><br>Internship at RTC</li>
-                            <li><span>2022 - 2023</span><br>Internship at RTC</li>
+                            <li><span>2022 - Current</span><br>Internship at Road To Code</li>
+                            <li><span>2022 - 2023</span><br>Teaching Assistant at Road To Code</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -81,20 +101,16 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Delectus saepe fugit corporis sed, nihil voluptates blanditiis,
-                        cupiditate nostrum amet quia ullam,
-                        et ipsam magni vero qui! Vero sit quod illo.</p>
-                    <a href="">Learn more</a>
+                    <p>Web design refers to the design of websites that are displayed on the internet. 
+                        It usually refers to the user experience aspects of website development rather than software development.</p>
+                    <a href="#about">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-sharp fa-solid fa-crop-simple"></i>
                     <h2>Web Develop</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Delectus saepe fugit corporis sed, nihil voluptates blanditiis,
-                        cupiditate nostrum amet quia ullam,
-                        et ipsam magni vero qui! Vero sit quod illo.</p>
-                    <a href="">Learn more</a>
+                    <p>Web development, also known as website development, refers to the tasks associated with creating, building, 
+                        and maintaining websites and web applications that run online on a browser. </p>
+                    <a href="#about">Learn more</a>
                 </div>
             </div>
         </div>
@@ -140,7 +156,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
+            <a href="https://github.com/sakshi-rah" class="btn">See more</a>
         </div>
     </div>
     <!--Contact-->
@@ -171,12 +187,12 @@
         </div>
         <div class="copyright">
             <p>You Can Connect Me By <a href="https://www.linkedin.com/in/sakshi-rah/">
-                <i class="fa-brands fa-linkedin icon"></i></a>
+                    <i class="fa-brands fa-linkedin icon"></i></a>
             </p>
         </div>
     </div>
     </div>
-    <script src="./script/script.js"></script>
+
 </body>
 
 </html>
