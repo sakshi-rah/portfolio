@@ -144,6 +144,10 @@ nav ul li a:hover::after {
     width: 30%;
 
 }
+.tab-contents ul {
+   display: flex;
+ justify-content: space-between;
+}
 
 .tab-contents ul li {
     list-style: none;
